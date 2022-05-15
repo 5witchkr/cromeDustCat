@@ -1,0 +1,21 @@
+{
+    "name": "Dust Cat",
+    "description": "weather",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icons": {
+            "16": "minicat.png",
+            "32": "minicat.png",
+            "48": "minicat.png",
+            "128": "minicat.png"
+          }
+        },
+        "icons": {
+          "16": "minicat.png",
+          "32": "minicat.png",
+          "48": "minicat.png",
+          "128": "minicat.png"
+      }
+  }
