@@ -38,6 +38,10 @@
                   <p>매우나쁨</p>
                   <progress class="progress progress-error w-56" value="60" max="100"></progress>
                   {/if}
+                  {#if $miseState == 5}
+                  <p>현재 기상정보가 없습니다</p>
+                  <progress class="progress progress-error w-56" value="0" max="100"></progress>
+                  {/if}
 				</div>
 			  </div>
 			  <div class="card lg:card-side bg-base-100 shadow-xl">
@@ -70,6 +74,10 @@
                   {#if $chomiseState == 4}
                   <p>매우나쁨</p>
                   <progress class="progress progress-error w-56" value="60" max="100"></progress>
+                  {/if}
+                  {#if $chomiseState == 5}
+                  <p>현재 기상정보가 없습니다.</p>
+                  <progress class="progress progress-error w-56" value="0" max="100"></progress>
                   {/if}
 				</div>
 			  </div>
