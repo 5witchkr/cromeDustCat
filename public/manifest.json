@@ -3,6 +3,9 @@
     "description": "weather",
     "version": "1.0",
     "manifest_version": 3,
+    "host_permissions": [
+      "https://www.weather.go.kr/w/wnuri-fct2021/main/current-weather.do"
+    ],
     "action": {
         "default_popup": "index.html",
         "default_icons": {
