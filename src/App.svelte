@@ -36,11 +36,15 @@ const getHtml = async () => {
 		} else if(mise == "자료") {
 			miseState.update(()=>{return 5});
 		}
-		loading.update(()=>{return false});
-		success.update(()=>{return true});
+
+		setTimeout(() => {
+			loading.update(()=>{return false});
+		success.update(()=>{return true});		
+		}, 100);
 		
 	} catch(error) {
 		console.error(error);
+		loading.update(()=>{return false});
 	}
 }
 
@@ -60,7 +64,9 @@ getHtml()
 	{/if}
 
 	{#if $success == false}
+	{#if $loading == false}
 	<Errpage/>
+	{/if}
 	{/if}
 
 

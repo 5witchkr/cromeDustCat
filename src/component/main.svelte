@@ -1,5 +1,9 @@
 <script>
-	import { miseState, chomiseState } from "../store/writableStore";
+	import { miseState, chomiseState, miseStatePG, chomiseStatePG } from "../store/writableStore";
+
+  let valuePG = 15;
+
+  
 
 </script>
 
@@ -24,7 +28,7 @@
 				  <h2 class="card-title">미세먼지 </h2>
 				          {#if $miseState == 1}
                   <p>좋음</p>
-                  <progress class="progress progress-info w-56" value="15" max="100"></progress>
+                  <progress class="progress progress-info w-56" value="{valuePG}" max="100"></progress>
                   {/if}
                   {#if $miseState == 2}
                   <p>보통</p>
